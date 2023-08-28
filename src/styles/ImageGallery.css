@@ -1,0 +1,89 @@
+.image-gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.horizontal-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tab-component,
+.image-gallery,
+.product-details {
+  flex: 1;
+}
+
+.tab-component.sticky,
+.image-gallery.sticky,
+.product-details.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+}
+
+.editors-note-title {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #000000;
+}
+
+.editors-note {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 250px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.editors-note-footer {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #000000;
+}
+
+.text-notes {
+  margin-top: 10px;
+}
+
+.text-notes a {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.text-notes a:hover {
+  text-decoration: underline;
+}
+
+.tab-component.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.product-details.sticky {
+  position: sticky;
+  top: 0;
+}
