@@ -1,7 +1,9 @@
+import "../styles/StickyFavoriteIcon.css";
+
 import React, { useState, useEffect } from "react";
+
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import IconButton from "@mui/material/IconButton";
-import "../styles/StickyFavoriteIcon.css";
 
 const StickyFavoriteIcon = () => {
   const [isSticky, setIsSticky] = useState(false);

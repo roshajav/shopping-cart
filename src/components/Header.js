@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+
 import SearchIcon from "@mui/icons-material/Search";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
@@ -26,11 +28,10 @@ const Header = () => {
       <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
         <Typography variant="h6">MyCompany.com</Typography>
 
-        {/* Part 2: Nav Menus in the center */}
         <div style={{ display: "flex", alignItems: "center" }}>
           <MenuItem>The Edit</MenuItem>
           <MenuItem>New Arrivals</MenuItem>
-          <MenuItem>Desginers</MenuItem>
+          <MenuItem>Designers</MenuItem>
           <MenuItem>Clothing</MenuItem>
           <MenuItem>Shoes</MenuItem>
           <MenuItem>Bags</MenuItem>

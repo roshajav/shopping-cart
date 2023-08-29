@@ -1,4 +1,3 @@
-// src/redux/reducers/sizeReducer.js
 const sizeReducer = (state = "L", action) => {
   switch (action.type) {
     case "SET_SIZE":

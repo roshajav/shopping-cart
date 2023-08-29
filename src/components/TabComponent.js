@@ -1,7 +1,9 @@
+import "../styles/TabComponent.css";
+
 import React, { useState } from "react";
+
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import "../styles/TabComponent.css";
 
 const TabComponent = () => {
   const [selectedTab, setSelectedTab] = useState(0);
