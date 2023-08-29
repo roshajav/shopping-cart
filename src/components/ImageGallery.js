@@ -1,38 +1,31 @@
+import "../styles/ImageGallery.css";
+
 import React, { useState, useEffect, useRef } from "react";
-
 import Grid from "@mui/material/Grid";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import { useTheme } from "@mui/material/styles";
 
-import "../styles/ImageGallery.css"; // Import your custom styles
+import ProductDetails from "./ProductDetails";
+import TabComponent from "./TabComponent";
+import ImageCard from "./ImageCard";
+import StickyFavoriteIcon from "./StickyFavoriteIcon";
 
 import Image1 from "../assets/Image1.jpg";
 import Image2 from "../assets/Image2.jpg";
 import Image3 from "../assets/Image3.jpg";
 import Image4 from "../assets/Image4.jpg";
 import Image5 from "../assets/Image5.jpg";
-import ProductDetails from "./ProductDetails";
-import TabComponent from "./TabComponent";
-import ImageCard from "./ImageCard";
-import StickyFavoriteIcon from "./StickyFavoriteIcon";
 
 const ImageGallery = () => {
   const [isSticky, setIsSticky] = useState(true);
   const tabComponentRef = useRef(null);
   const productDetailsRef = useRef(null);
   const editorsNoteRef = useRef(null);
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     const windowHeight = window.innerHeight;
-    // const galleryHeight = document.getElementById("imageGallery").offsetHeight;
     const galleryHeight = tabComponentRef.current.offsetHeight;
     const tabComponentHeight = tabComponentRef.current.offsetHeight;
     const productDetailsHeight = productDetailsRef.current.offsetHeight;
-    const editorsNoteTop = editorsNoteRef.current.getBoundingClientRect().top;
-
     if (
       scrollPosition + windowHeight >= galleryHeight - productDetailsHeight ||
       scrollPosition + windowHeight <= galleryHeight - tabComponentHeight
@@ -77,11 +70,11 @@ const ImageGallery = () => {
     },
     {
       id: 7,
-      src: Image3,
+      src: Image2,
     },
     {
       id: 8,
-      src: Image5,
+      src: Image3,
     },
   ];
 
@@ -120,13 +113,13 @@ const ImageGallery = () => {
       </div>
       <div className="text-notes">
         <p>
-          <a href="#" className="black-underline">
+          <a href="/#" className="black-underline">
             JONATHAN SIMKHAI
           </a>{" "}
-          <a href="#" className="black-underline">
+          <a href="/#" className="black-underline">
             BLAZERS
           </a>{" "}
-          <a href="#" className="black-underline">
+          <a href="/#" className="black-underline">
             VESCOSE
           </a>
         </p>
@@ -137,6 +130,11 @@ const ImageGallery = () => {
         className={`paragraph-text ${isSticky ? "sticky" : ""}`}
       >
         <p className="editors-note-title">NOTE FROM THE EDITOR</p>
+        <p className="editors-note">
+          The Forte Lurex Linen Viscose Jacket in Mother of Pearl features lunar
+          lavishness by night and by day: a blazer in a linen blend shot with
+          lurex for a shimmering surface that shines like a star in the sky.
+        </p>
         <p className="editors-note">
           The Forte Lurex Linen Viscose Jacket in Mother of Pearl features lunar
           lavishness by night and by day: a blazer in a linen blend shot with

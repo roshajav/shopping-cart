@@ -1,12 +1,14 @@
+import "../styles/ProductDetails.css";
+
 import React, { useState } from "react";
+
 import { Button } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
+
 import ProductImage1 from "../assets/Product-Img-Color1.jpg";
 import ProductImage2 from "../assets/Product-Img-Color2.jpg";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward"; // Import the arrow icon
-
-import "../styles/ProductDetails.css";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const ProductDetails = () => {
   const product = {
