@@ -87,3 +87,8 @@
   position: sticky;
   top: 0;
 }
+
+.sticky-fav-icon {
+  position: relative;
+  justify-content: end;
+}

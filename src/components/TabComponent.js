@@ -24,16 +24,19 @@ const TabComponent = () => {
         onChange={handleTabChange}
         indicatorColor="primary"
         textColor="primary"
-        TabIndicatorProps={{ style: { display: "none" } }} // Hide the indicator
+        TabIndicatorProps={{ style: { display: "none" } }}
         sx={{
-          color: "black", // Set tab text color to black
-          paddingLeft: "0", // Remove default padding
+          color: "black",
+          paddingLeft: "0",
           "& .MuiTabs-scroller": {
             overflow: "visible",
           },
         }}
       >
-        <Tab label="Details" sx={{ paddingRight: "16px" }} />
+        <Tab
+          label="Details"
+          sx={{ paddingRight: "16px", color: "black", fontFamily: 500 }}
+        />
         <Tab
           label="Delivery"
           disabled
@@ -79,17 +82,3 @@ const TabComponent = () => {
 };
 
 export default TabComponent;
-
-// import React from "react";
-// import "../styles/TabComponent.css"; // Import your custom styles
-
-// const TabComponent = () => {
-//   return (
-//     <div className="sticky-left">
-//       {/* Add your text content */}
-//       <p>This is the Left Sticky Component</p>
-//     </div>
-//   );
-// };
-
-// export default TabComponent;
