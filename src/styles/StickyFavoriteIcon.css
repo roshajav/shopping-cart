@@ -1,0 +1,17 @@
+.favorite-icon-container {
+  position: sticky;
+  top: 135px;
+  right: 50px;
+  border-radius: 50%;
+  padding: 5px;
+  z-index: 3;
+  float: right;
+}
+
+.favorite-icon {
+  display: inline-block;
+}
+
+.sticky {
+  position: sticky;
+}

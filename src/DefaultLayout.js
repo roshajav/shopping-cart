@@ -4,10 +4,10 @@ import ImageGallery from "./components/ImageGallery";
 
 const DefaultLayout = () => {
   return (
-    <div>
+    <>
       <Header />
       <ImageGallery />
-    </div>
+    </>
   );
 };
 
